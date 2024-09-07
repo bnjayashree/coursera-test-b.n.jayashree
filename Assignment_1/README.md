@@ -11,4 +11,4 @@ Only 1 message should be shown at any given time. In other words, if you have bo
 
 You are not required to handle a case where there is no item between some commas. For example, you are free to consider this case `item 1, item2,,item3` or this case `item 1, item2, ,item3` as 4 items in the list. However, you can implement checking for an 'empty' item as a bonus feature (ungraded). Please make sure to put a comment somewhere next to the input textbox stating that you do NOT consider and empty item, i.e., `, ,` as an item towards to the count.
 
-[See my solution web page]([http://localhost:3000/Assignment_1/index.html](https://bnjayashree.github.io/coursera-test-b.n.jayashree/Assignment_1))
+[See my solution web page](http://localhost:3000/Assignment_1/index.html](https://bnjayashree.github.io/coursera-test-b.n.jayashree/Assignment_1)
