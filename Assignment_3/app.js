@@ -4,7 +4,7 @@
     angular.module('NarrowItDownApp', [])
         .controller('NarrowItDownController', NarrowItDownController)
         .service('MenuSearchService', MenuSearchService)
-        .constant('ApiBasePath', "https://www.hyattrestaurants.com/en/dining/india/bangalore/the-bengaluru-brasserie-restaurant-menu")
+        .constant('ApiBasePath', "https://davids-restaurant.herokuapp.com")
         .directive('foundItems', FoundItems);
 
     function FoundItems() {
