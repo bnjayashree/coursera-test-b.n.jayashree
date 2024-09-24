@@ -1,0 +1,8 @@
+<h3>Found List Directive</h3>
+<ol>
+  <li ng-repeat="item in list.found">
+    <div><b>{{ item.name }}</b></div>
+    <div>(description: {{item.description}}) </div>
+    <button ng-click="list.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ol>
