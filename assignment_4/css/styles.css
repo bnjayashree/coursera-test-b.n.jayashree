@@ -11,7 +11,7 @@ body {
 .loading-icon {
   position: absolute;
   left: 50%;
-  top: 10px;
+  top: 50%;
 }
 
 li[ui-sref]:hover {
