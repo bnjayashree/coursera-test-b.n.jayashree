@@ -3,30 +3,46 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Restaurant</title>
+    <title>Menu for Restaraunt</title>
   </head>
   <body>
-    <h1>Welcome to our Restaurant</h1>
+    <div class="container">
+      <div>
+        <h3>Restaurant Menu App</h3>
+        <ul>
+          <li ui-sref-active="active" ui-sref="home"><a href="#">Home</a></li>
+          <li ui-sref-active="active" ui-sref="categories"><a href="#">Categories</a></li>
+        </ul>
+      </div>
+      <ui-view></ui-view>
+    </div>
 
-    <ui-view></ui-view>
+        <loading-spinner></loading-spinner>
 
-    <!-- Libraries -->
-  <script src="lib/angular.min.js"></script>
-  <script src="lib/angular-ui-router.min.js"></script>
+        <!-- Libraries -->
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-ui-router.min.js"></script>
 
-  <!-- Modules -->
-  <script src="src/menuapp/menuapp.module.js"></script>
-  <script src="src/menuapp/data.module.js"></script>
+        <!-- Modules -->
+        <script src="src/menulist/menuapp.module.js"></script>
+        <script src="src/menulist/data.module.js"></script>
+        <script src="src/spinner/spinner.module.js"></script>
+        <script src="src/menulist/categories.controller.js"></script>
+        <script src="src/menulist/items.controller.js"></script>
+        <script src="src/menulist/menudata.service.js"></script>
+        <script src="src/menulist/categories.component.js"></script>
 
-  <!-- Routes -->
-  <script src="src/routes.js"></script>
+        <script src="src/menulist/items.component.js"></script>
 
-  <!-- 'MenuApp' module artifacts -->
-  <script src="src/menuapp/menudata.service.js"></script>
-  <script src="src/menuapp/categories.component.js"></script>
-  <script src="src/menuapp/items.component.js"></script>
-  <script src="src/menuapp/categories.controller.js"></script>
-  <script src="src/menuapp/items.controller.js"></script>
+        <!-- Routes -->
+        <script src="src/routes.js"></script>
+        <script src="src/menulist/templates/home.template.html"></script>
+        <script src="src/menulist/templates/categoriescomponent.template.html"></script>
+        <script src="src/menulist/templates/categories.template.html"></script>
+        <script src="src/menulist/templates/itemscomponent.template.html"></script>
+        <script src="src/menulist/templates/items.template.html"></script>
 
+        <!-- 'Spinner' module artifacts -->
+        <script src="src/spinner/loadingspinner.component.js"></script>
   </body>
 </html>
