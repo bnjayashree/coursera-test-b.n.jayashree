@@ -1,47 +1,48 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Menu App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Menu for Restaraunt</title>
   </head>
-  <body ng-app='MenuApp'>
+  <body>
     <div class="container">
-      <div class="page-header">
-        <h1>Welcome to our restaurant!</h1>
+      <div>
+        <h3>Restaurant Menu App</h3>
+        <ul>
+          <li ui-sref-active="active" ui-sref="home"><a href="#">Home</a></li>
+          <li ui-sref-active="active" ui-sref="categories"><a href="#">Categories</a></li>
+        </ul>
       </div>
       <ui-view></ui-view>
     </div>
 
-    <!-- Libraries -->
-    <script src="lib/angular.min.js"></script>
-    <script src="lib/angular-ui-router.min.js"></script>
+        <loading-spinner></loading-spinner>
 
-    <!-- Modules -->
-    <script src="app/menuapp/menuapp.module.js"></script>
-    <script src="app/data/data.module.js"></script>
-    <script src="app/spinner/spinner.module.js"></script>
+        <!-- Libraries -->
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-ui-router.min.js"></script>
 
-    <!-- Routes -->
-    <script src="app/routes.js"></script>
+        <!-- Modules -->
+        <script src="src/menulist/menuapp.module.js"></script>
+        <script src="src/menulist/data.module.js"></script>
+        <script src="src/spinner/spinner.module.js"></script>
+        <script src="src/menulist/categories.controller.js"></script>
+        <script src="src/menulist/items.controller.js"></script>
+        <script src="src/menulist/menudata.service.js"></script>
+        <script src="src/menulist/categories.component.js"></script>
 
-    <!-- 'data' module artifacts -->
-    <script src="app/data/constants.js"></script>
-    <script src="app/data/menudata.service.js"></script>
+        <script src="src/menulist/items.component.js"></script>
 
-    <!-- 'MenuApp' module artifacts -->
-    <script src="app/menuapp/categories/categories.component.js"></script>
-    <script src="app/menuapp/categories/categories.controller.js"></script>
-    <script src="app/menuapp/items/items.component.js"></script>
-    <script src="app/menuapp/items/items.controller.js"></script>
+        <!-- Routes -->
+        <script src="src/routes.js"></script>
+        <script src="src/menulist/templates/home.template.html"></script>
+        <script src="src/menulist/templates/categoriescomponent.template.html"></script>
+        <script src="src/menulist/templates/categories.template.html"></script>
+        <script src="src/menulist/templates/itemscomponent.template.html"></script>
+        <script src="src/menulist/templates/items.template.html"></script>
 
-    <!-- 'spinner' module artifacts -->
-    <script src="app/spinner/loadingspinner.component.js"></script>
+        <!-- 'Spinner' module artifacts -->
+        <script src="src/spinner/loadingspinner.component.js"></script>
   </body>
 </html>
