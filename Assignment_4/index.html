@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Menu App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body ng-app='MenuApp'>
+    <div class="container">
+      <div class="page-header">
+        <h1>Welcome to our restaurant!</h1>
+      </div>
+      <ui-view></ui-view>
+    </div>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="app/menuapp/menuapp.module.js"></script>
+    <script src="app/data/data.module.js"></script>
+    <script src="app/spinner/spinner.module.js"></script>
+
+    <!-- Routes -->
+    <script src="app/routes.js"></script>
+
+    <!-- 'data' module artifacts -->
+    <script src="app/data/constants.js"></script>
+    <script src="app/data/menudata.service.js"></script>
+
+    <!-- 'MenuApp' module artifacts -->
+    <script src="app/menuapp/categories/categories.component.js"></script>
+    <script src="app/menuapp/categories/categories.controller.js"></script>
+    <script src="app/menuapp/items/items.component.js"></script>
+    <script src="app/menuapp/items/items.controller.js"></script>
+
+    <!-- 'spinner' module artifacts -->
+    <script src="app/spinner/loadingspinner.component.js"></script>
+  </body>
+</html>
